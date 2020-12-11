@@ -77,15 +77,15 @@ const game = ()=> {
             }
 
         }
-        if(playerChoice === "paper"){
-            if(computerChoice === "scissor"){
-                winner.textContent = "Computer wins";
-                cScore++;
+        if(playerChoice === "scissor"){
+            if(computerChoice === "paper"){
+                winner.textContent = "Player wins";
+                pScore++;
                 updateScore();
                 return;
             }else{
-                winner.textContent = "Player wins";
-                pScore++;
+                winner.textContent = "Computer wins";
+                cScore++;
                 updateScore();
                 return;
             }
@@ -93,13 +93,13 @@ const game = ()=> {
         }
         if(playerChoice === "paper"){
             if(computerChoice === "rock"){
-                winner.textContent = "Computer wins";
-                cScore++;
+                winner.textContent = "Player wins";
+                pScore++;
                 updateScore();
                 return;
             }else{
-                winner.textContent = "Player wins";
-                pScore++;
+                winner.textContent = "Computer wins";
+                cScore++;
                 updateScore();
                 return;
             }

@@ -58,6 +58,27 @@ const game = ()=> {
 
     const compareHands = (playerChoice, computerChoice) =>{
         const winner = document.querySelector(".winner");
+
+        if (pScore == 10) {
+            winner.textContent = "Player won"
+            pScore = 0;
+            cScore = 0;
+            match.classList.remove("fadeIn");
+            match.classList.add("fadeOut");
+            introScreen.classList.remove("fadeOut");
+
+
+        }
+        if (cScore == 10) {
+            winner.textContent = "Computer won"
+            pScore = 0;
+            cScore = 0;
+            match.classList.remove("fadeIn");
+            match.classList.add("fadeOut");
+            introScreen.classList.remove("fadeOut");
+
+        }
+
         if(playerChoice ===  computerChoice){
             winner.textContent = "It's a tie";
             return;
